@@ -22,12 +22,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Hasil Perkalian: " . $hasil;
             break;
         case 4:
-            // Cek untuk pembagian dengan nol
+            // Cek untuk pembagian dengan angka nol
             if ($bilangan2 != 0) {
                 $hasil = $bilangan1 / $bilangan2;
                 echo "Hasil Pembagian: " . $hasil;
             } else {
-                echo "Error: Pembagian dengan nol tidak diperbolehkan.";
+                echo "Error: Pembagian dengan angka nol tidak diperbolehkan.";
             }
             break;
         default:
